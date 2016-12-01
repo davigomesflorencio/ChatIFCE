@@ -1,0 +1,69 @@
+<!Doctype html>
+<html>
+
+<head>
+  <title>chat</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $(".button").click(function(){
+        $(".table-overflow").scrollTop($(".table-overflow").scrollTop()+70);
+    });
+  });
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-default cornav navinha">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <div class="fe">
+        <a class="navbar-brand" href="#"> <img alt="Brand" src="next.png" height="70" width="70"></a>
+        <a class="navbar-brand" href="#">CHAT     IFCE     Estagiarios da E.E.E.P. Capelão Frei Orlando</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="panel panel-primary">
+      <div class="panel-heading rt">Mensagens</div>
+      <div class="panel-body table-overflow">
+        <ol id="messages">
+        </ol>
+      </div>
+    </div>
+
+  </div>
+  <footer class="container-fluid fixed text-center navinha">
+
+    <div class="form-group">
+      <h1></h1>
+      <table>
+        <tr>
+          <td class="td1"><input type="text" class="form-control" placeholder="Digite aqui a mensagem" id="usr" autocomplete="off" autofocus></td>
+          <td class="td2">
+            <h1> </h1>
+          </td>
+          <td class="td3"><img src="next.png" class="button" width="40" height="40" onclick="enviar()"></td>
+        </tr>
+      </table>
+    </div>
+  </footer>
+</body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+<script>
+
+</script>
+
+</html>

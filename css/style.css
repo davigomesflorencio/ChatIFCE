@@ -1,0 +1,87 @@
+.cornav{
+    background-color: #555;
+    color: white;
+}
+.fixed{
+	position:absolute;
+	bottom:0;
+	width:100%;
+    background-color: #555;
+    color: black;
+}
+.container{
+     width: 90%;
+     height: 100%;
+ }
+body{
+    background:url('fundo-cinza.jpg');
+    font-family: 'Roboto', sans-serif;
+    
+    font-size: 20px;
+}
+.table-overflow {
+    max-height:450px;
+    overflow-y:auto; 
+}
+.td1{
+    height: 100px;
+    width: 100%;
+}
+.navinha{
+    background: #00FFFF;
+}
+.td3 {
+     width: 100%;
+     height: 100%;
+}
+.td3 img {
+     -webkit-transition: all 1s ease;
+     /* Safari and Chrome */
+    -moz-transition: all 1s ease;
+    /* Firefox */
+    -o-transition: all 1s ease;
+    /* IE 9 */
+     -ms-transition: all 1s ease;
+    /* Opera */
+    transition: all 1s ease;
+}
+.td3:hover img {
+     -webkit-transform: scale(1.55);
+    /* Safari and Chrome */
+    -moz-transform: scale(1.55);
+    /* Firefox */
+    -ms-transform: scale(1.55);
+    /* IE 9 */
+    -o-transform: scale(1.55);
+    /* Opera */
+     transform: scale(1.55);
+}
+.rt{
+    background: #FFA500;
+    text-align: center;
+}
+.row{
+	position: relative;
+	left: 38%;
+	margin-top: 10%;
+}
+.input{
+    position: relative;
+	left: 35%;
+	margin-top: 2%;
+    width:30%;
+    height: 20%;
+}
+.imagenext:hover{
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+.botao:hover{
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+.fe{
+    background: #00FFFF;
+}
